@@ -1,0 +1,17 @@
+<h2>Create a new user</h2>
+<form method="POST" action="/users">
+	<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+	<p>Email: <input type="text" name="user[email]"></p>
+	<p>Password: <input type="text" name="user[password]"></p>
+	<p>Password Confirmation: <input type="text" name="user[password_confirmation]"></p>
+	<input type="submit" name="">
+</form>
+
+
+<h2>Login an existing user</h2>
+<form method="POST" action="/sessions">
+	<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+	<p>Email: <input type="text" name="user[email]"></p>
+	<p>Password: <input type="text" name="user[password]"></p>
+	<input type="submit" name="">
+</form>
